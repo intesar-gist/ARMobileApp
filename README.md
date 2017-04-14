@@ -1,2 +1,2 @@
 # ARMobileApp
-Markerless Augmented Reality with a Real-time Affine Region Tracker
+Markerless Augmented Reality using Geo locations 
