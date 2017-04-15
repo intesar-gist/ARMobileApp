@@ -30,10 +30,10 @@ function Pointer(ptrCoordinates) {
     this.titleLabel = new AR.Label(ptrCoordinates.title.trunc(10), 1, {
         zOrder: 1,
         translate: {
-            y: 0.55
+            y: 0.45
         },
         style: {
-            textColor: '#FFFFFF',
+            textColor: '#191313',
             fontStyle: AR.CONST.FONT_STYLE.BOLD
         }
     });
