@@ -17,6 +17,8 @@ var World = {
 
         // show radar & set click-listener
         PointersRadar.show();
+        $('#radarDiv').unbind('click');
+        $("#radarDiv").click(World.clickedRadar);
 
 		World.pointerList = [];
 
@@ -31,7 +33,9 @@ var World = {
 				"longitude": parseFloat(poiData[i].longitude),
 				"altitude": AR.CONST.UNKNOWN_ALTITUDE,
 				"title": poiData[i].name,
-				"description": poiData[i].description
+				"description": poiData[i].description,
+                "buildingName": poiData[i].buildingName,
+                "thumbnailURL": poiData[i].thumbnailURL
 			};
 
 			World.pointerList.push(new Pointer(singlePointer));
@@ -78,7 +82,7 @@ var World = {
 		World.currentPointer = pointer;
 
         // update panel values
-        $("#pointerTitle").html(pointer.ptrCoordinates.title);
+        $("#buildingName").html(pointer.ptrCoordinates.buildingName);
         $("#pointerDescription").html(pointer.ptrCoordinates.description);
 
         //in-case distance wasn't calculated properly, re-calculate it
@@ -147,6 +151,23 @@ var World = {
 
     hideLoader : function hideLoaderFn() {
         $.mobile.loading( "hide" );
+    },
+
+    //when user clicks on the radar, show him all the available buildings / markers
+    clickedRadar: function clickedRadarFn() {
+        // show panel
+        var output = '';
+        for (var i = 0; i < World.pointerList.length; i++) {
+            output += ' <li><a href="javascript: World.onBuildingClickFromList(World.pointerList['+i+']);"><img src="'+World.pointerList[i].ptrCoordinates.thumbnailURL+'">'+World.pointerList[i].ptrCoordinates.title+'</a></li>';
+        }
+
+        $('#buildingDetailsLV').html(output).listview("refresh");
+        $("#allPtrsListPanel").panel("open");
+    },
+
+    //when a user click on a building in all buildings list view panel at the left of screen
+    onBuildingClickFromList: function onBuildingClickFromListFn(pointer) {
+        World.onPointerSelected(pointer);
     }
 
 };

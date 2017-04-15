@@ -53,8 +53,8 @@
 
              <div data-role="content">
 
-                 <!-- title -->
-                 <h3 id="pointerTitle"></h3>
+                 <!-- buildingName -->
+                 <h3 id="buildingName"></h3>
 
                  <!-- description -->
                  <h4 id="pointerDescription"></h4>
@@ -64,6 +64,22 @@
 
                  <!-- more button-->
                  <a href="javascript: World.showDetailsInAndroidActivity();" data-role="button" data-icon="arrow-r" data-iconpos="right" data-inline="true">Details</a>
+
+             </div>
+         </div>
+
+         <!-- building list -->
+         <div data-role="panel" id="allPtrsListPanel" data-position="left" data-display="push" style="background-color:#666666;" data-theme="b">
+
+             <div data-role="header" data-theme="c">
+                 <h1>Buildings</h1>
+             </div>
+
+             <div data-role="content">
+
+                     <ul data-role="listview" data-inset="true" id="buildingDetailsLV">
+
+                     </ul>
 
              </div>
          </div>

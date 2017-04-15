@@ -38,7 +38,9 @@ var pointersData = [
         "latitude": 50.56355164,
         "altitude": 300,
         "name": "L",
-        "description": "Building # 31 (L)"
+        "buildingName": "Building # 31 (L)",
+        "description": "Building # 31 (L)",
+        "thumbnailURL": "http://i.imgur.com/DnDoIjl.jpg"
     },
 //    {
 //        "id": 6,
@@ -118,7 +120,9 @@ var pointersData = [
         "latitude": 50.56505777,
         "altitude": 302,
         "name": "E",
-        "description": "DepT. of CS 46 (E)"
+        "buildingName": "Building # E",
+        "description": "Department of Computer Science. All labs such as Linux / IOS are here. Major CS classes also held in this same building.",
+        "thumbnailURL": "http://i.imgur.com/DnDoIjl.jpg"
     },
     {
         "id": 17,
@@ -126,7 +130,9 @@ var pointersData = [
         "latitude": 50.56518214,
         "altitude": 300,
         "name": "G",
-        "description": "Building # 51 (G)"
+        "buildingName": "Building # 51 (G)",
+        "description": "Building # 51 (G)",
+        "thumbnailURL": "http://i.imgur.com/DnDoIjl.jpg"
     },
 //    {
 //        "id": 18,
@@ -158,7 +164,8 @@ var pointersData = [
         "latitude": 50.56611067,
         "altitude": 307,
         "name": "P",
-        "description": "Building # 22 (P)"
+        "description": "Building # 22 (P)",
+        "thumbnailURL": "http://i.imgur.com/DnDoIjl.jpg"
     },
     {
         "id": 22,
@@ -166,7 +173,9 @@ var pointersData = [
         "latitude": 50.56657749,
         "altitude": 307,
         "name": "Q",
-        "description": "Studentenwerk-Q"
+        "buildingName": "Building # Q",
+        "description": "Studentenwerk-Q",
+        "thumbnailURL": "http://i.imgur.com/DnDoIjl.jpg"
     },
     {
         "id": 23,
@@ -174,7 +183,9 @@ var pointersData = [
         "latitude": 50.56504414,
         "altitude": 306,
         "name": "U",
-        "description": "U-Bibliothek"
+        "buildingName": "Building # U",
+        "description": "U-Bibliothek",
+        "thumbnailURL": "http://i.imgur.com/DnDoIjl.jpg"
     },
 //    {
 //        "id": 24,
@@ -190,7 +201,9 @@ var pointersData = [
         "latitude": 50.56517363,
         "altitude": 304,
         "name": "S",
-        "description": "Stud Servi Cent"
+        "buildingName": "Building # S",
+        "description": "International student service center. Should visit for registration or issues.",
+        "thumbnailURL": "http://i.imgur.com/DnDoIjl.jpg"
     },
     {
         "id": 29,
@@ -198,7 +211,9 @@ var pointersData = [
         "latitude": 50.5497386,
         "altitude": 252,
         "name": "KL",
-        "description": "Kaufland"
+        "buildingName": "Kaufland Mart",
+        "description": "Kaufland",
+        "thumbnailURL": "http://i.imgur.com/DnDoIjl.jpg"
     },
     {
         "id": 30,
@@ -206,5 +221,7 @@ var pointersData = [
         "latitude": 50.54844334,
         "altitude": 247,
         "name": "PRK",
-        "description": "Beautiful Park"
+        "buildingName": "Joggin Park",
+        "description": "Beautiful Park",
+        "thumbnailURL": "http://i.imgur.com/DnDoIjl.jpg"
     }];
