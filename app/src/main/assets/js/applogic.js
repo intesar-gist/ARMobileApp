@@ -108,6 +108,7 @@ var World = {
 	},
 
     showDetailsInAndroidActivity: function showDetailsInAndroidActivityFn() {
+
         var currentPointer = World.currentPointer;
         var pointerSelectedJSON = {
             action: "pointer_detailed_activity",
@@ -119,12 +120,34 @@ var World = {
          The sendJSONObject method can be used to send data from javascript to the native code.
          */
         AR.platform.sendJSONObject(pointerSelectedJSON);
+
     },
 
 	// request data
 	requestDataFromLocal: function requestDataFromLocalFn(lat, lon) {
 		World.loadPointersFromJsonData(pointersData);
-	}
+	},
+
+    showLoader : function showLoaderFn() {
+
+        var $this = $( this ),
+            theme = $this.jqmData( "theme" ) || $.mobile.loader.prototype.options.theme,
+            msgText = $this.jqmData( "msgtext" ) || $.mobile.loader.prototype.options.text,
+            textVisible = $this.jqmData( "textvisible" ) || $.mobile.loader.prototype.options.textVisible,
+            textonly = !!$this.jqmData( "textonly" );
+        html = $this.jqmData( "html" ) || "";
+        $.mobile.loading( 'show', {
+            text: msgText,
+            textVisible: textVisible,
+            theme: theme,
+            textonly: textonly,
+            html: html
+        });
+    },
+
+    hideLoader : function hideLoaderFn() {
+        $.mobile.loading( "hide" );
+    }
 
 };
 
