@@ -15,6 +15,9 @@ var World = {
 
 	loadPointersFromJsonData: function loadPoisFromJsonDataFn(poiData) {
 
+        // show radar & set click-listener
+        PointersRadar.show();
+
 		World.pointerList = [];
 
 		World.pointerDrawable_idle = new AR.ImageResource("assets/pointer_idle.png");

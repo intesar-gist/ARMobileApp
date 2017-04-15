@@ -55,11 +55,34 @@ function Pointer(ptrCoordinates) {
         verticalAnchor: AR.CONST.VERTICAL_ANCHOR.TOP
     });
 
+    this.radarCircle = new AR.Circle(0.03, {
+        horizontalAnchor: AR.CONST.HORIZONTAL_ANCHOR.CENTER,
+        opacity: 0.8,
+        style: {
+            fillColor: "#ffffff"
+        }
+    });
+
+    this.radarCircleSelected = new AR.Circle(0.05, {
+        horizontalAnchor: AR.CONST.HORIZONTAL_ANCHOR.CENTER,
+        opacity: 0.8,
+        style: {
+            fillColor: "#0066ff"
+        }
+    });
+
+    this.radardrawables = [];
+    this.radardrawables.push(this.radarCircle);
+
+    this.radardrawablesSelected = [];
+    this.radardrawablesSelected.push(this.radarCircleSelected);
+
     //Consolidate the pointer GeoLocation, idle and selected image drawables as well as direction indicator drawable
     this.pointerObject = new AR.GeoObject(pointerLocation, {
         drawables: {
             cam: [this.pointerDrawable_idle, this.pointerDrawable_selected, this.titleLabel, this.descriptionLabel],
-            indicator: this.directionIndicatorDrawable
+            indicator: this.directionIndicatorDrawable,
+            radar: this.radardrawables
         }
     });
 
@@ -176,6 +199,7 @@ Pointer.prototype.setSelected = function(pointer) {
     pointer.pointerDrawable_idle.onClick = null;
     pointer.pointerDrawable_selected.onClick = Pointer.prototype.getOnClickTrigger(pointer);
     pointer.directionIndicatorDrawable.enabled = true;
+    pointer.pointerObject.drawables.radar = pointer.radardrawablesSelected;
 
     // starts animation
     pointer.animationGroup_selected.start();
@@ -184,6 +208,7 @@ Pointer.prototype.setSelected = function(pointer) {
 Pointer.prototype.setDeselected = function(pointer) {
 
     pointer.isSelected = false;
+    pointer.pointerObject.drawables.radar = pointer.radardrawables;
 
     if (pointer.animationGroup_idle === null) {
 

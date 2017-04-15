@@ -14,6 +14,8 @@
 
     <link rel="stylesheet" href="jquery/jquery.mobile-1.3.2.min.css" />
     <link rel="stylesheet" href="jquery/jquery-mobile-transparent-ui-overlay.css" />
+    <link rel="stylesheet" href="css/radar-styling.css" />
+
     <script type="text/javascript" src="jquery/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="jquery/jquery.mobile-1.3.2.min.js"></script>
 
@@ -21,22 +23,26 @@
     <!-- Pointer representation-->
         <script src="js/data.js"></script>
         <script src="js/Pointer.js"></script>
-    <script type="text/javascript" src="js/applogic.js"></script>
+        <script type="text/javascript" src="js/applogic.js"></script>
+        <script type="text/javascript" src="js/radar.js"></script>
 </head>
     
     <body >
      <div data-role="page" id="page1" style="background: none;" >
 
-            <!-- Footer -->
-            <div data-role="footer" class="ui-bar" data-theme="f" data-position="fixed" style="text-align:center;">
-                <!-- button for in app debugging -->
-                <a style="text-align:right;" id="popupInfoButton" href="#popupInfo" data-rel="popup" data-role="button" class="ui-icon-alt"
-                   data-inline="true" data-transition="pop" data-icon="alert" data-theme="e" data-iconpos="notext">Log</a> </p>
+         <!-- Wikitude Radar Component -->
+        <div class="radar-top-left" id="radarDiv"></div>
 
-                <div data-role="popup" id="popupInfo" class="ui-content" data-theme="e" style="max-width:350px;">
-                  <p style="text-align:right;" id="status-message">Looks like GPS is not working</p>
-                </div>
+        <!-- Footer -->
+        <div data-role="footer" class="ui-bar" data-theme="f" data-position="fixed" style="text-align:center;">
+            <!-- button for in app debugging -->
+            <a style="text-align:right;" id="popupInfoButton" href="#popupInfo" data-rel="popup" data-role="button" class="ui-icon-alt"
+               data-inline="true" data-transition="pop" data-icon="alert" data-theme="e" data-iconpos="notext">Log</a> </p>
+
+            <div data-role="popup" id="popupInfo" class="ui-content" data-theme="e" style="max-width:350px;">
+              <p style="text-align:right;" id="status-message">Looks like GPS is not working</p>
             </div>
+        </div>
 
          <!-- pointer's details -->
          <div data-role="panel" id="pointerDataPanel" data-position="right" data-display="overlay" style="background-color:#F0F0F0;" data-theme="c">
