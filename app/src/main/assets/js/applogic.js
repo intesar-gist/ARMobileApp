@@ -24,23 +24,23 @@ var World = {
 		World.pointerDrawable_selected = new AR.ImageResource("assets/pointer_selected.png");
 		World.pointerDrawable_directionIndicator = new AR.ImageResource("assets/indi.png");
 
-		for (var currentPlaceNr = 0; currentPlaceNr < poiData.length; currentPlaceNr++) {
-			var singlePoi = {
-				"id": poiData[currentPlaceNr].id,
-				"latitude": parseFloat(poiData[currentPlaceNr].latitude),
-				"longitude": parseFloat(poiData[currentPlaceNr].longitude),
+		for (var i = 0; i < poiData.length; i++) {
+			var singlePointer = {
+				"id": poiData[i].id,
+				"latitude": parseFloat(poiData[i].latitude),
+				"longitude": parseFloat(poiData[i].longitude),
 				"altitude": AR.CONST.UNKNOWN_ALTITUDE,
-				"title": poiData[currentPlaceNr].name,
-				"description": "" //pointersData[currentPlaceNr].description
+				"title": poiData[i].name,
+				"description": poiData[i].description
 			};
 
-			World.pointerList.push(new Pointer(singlePoi));
+			World.pointerList.push(new Pointer(singlePointer));
 		}
 
         // updates distance information of all places
         World.preCalculatePointersDistance();
 
-		World.updateStatusMessage(currentPlaceNr + ' places loaded');
+		World.updateStatusMessage(i + ' places loaded');
 	},
 
     // calculating distance while loading pointers

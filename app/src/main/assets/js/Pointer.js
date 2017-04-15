@@ -38,17 +38,6 @@ function Pointer(ptrCoordinates) {
         }
     });
 
-    // Pointer description AR.Label
-    this.descriptionLabel = new AR.Label(ptrCoordinates.description.trunc(15), 0.8, {
-        zOrder: 1,
-        translate: {
-            y: -0.55
-        },
-        style: {
-            textColor: '#FFFFFF'
-        }
-    });
-
     //direction indicator image drawable
     this.directionIndicatorDrawable = new AR.ImageDrawable(World.pointerDrawable_directionIndicator, 0.1, {
         enabled: false,
@@ -80,7 +69,7 @@ function Pointer(ptrCoordinates) {
     //Consolidate the pointer GeoLocation, idle and selected image drawables as well as direction indicator drawable
     this.pointerObject = new AR.GeoObject(pointerLocation, {
         drawables: {
-            cam: [this.pointerDrawable_idle, this.pointerDrawable_selected, this.titleLabel, this.descriptionLabel],
+            cam: [this.pointerDrawable_idle, this.pointerDrawable_selected, this.titleLabel],
             indicator: this.directionIndicatorDrawable,
             radar: this.radardrawables
         }
@@ -157,14 +146,6 @@ Pointer.prototype.setSelected = function(pointer) {
                             new AR.EasingCurve(AR.CONST.EASING_CURVE_TYPE.EASE_OUT_ELASTIC, {amplitude: 2.0})
         );
 
-        var descriptionLabelResizeAnimationX = new AR.PropertyAnimation(pointer.descriptionLabel,
-                            'scale.x',
-                            null,
-                            1.2,
-                            resizeAnimationDurationInMS,
-                            new AR.EasingCurve(AR.CONST.EASING_CURVE_TYPE.EASE_OUT_ELASTIC, {amplitude: 2.0})
-        );
-
         var idleDrawableResizeAnimationY = new AR.PropertyAnimation(pointer.pointerDrawable_idle, 'scale.y', null, 1.2, resizeAnimationDurationInMS, new AR.EasingCurve(AR.CONST.EASING_CURVE_TYPE.EASE_OUT_ELASTIC, {
             amplitude: 2.0
         }));
@@ -177,10 +158,6 @@ Pointer.prototype.setSelected = function(pointer) {
             amplitude: 2.0
         }));
 
-        var descriptionLabelResizeAnimationY = new AR.PropertyAnimation(pointer.descriptionLabel, 'scale.y', null, 1.2, resizeAnimationDurationInMS, new AR.EasingCurve(AR.CONST.EASING_CURVE_TYPE.EASE_OUT_ELASTIC, {
-            amplitude: 2.0
-        }));
-
         // add all the animations to the group that will run them
         pointer.animationGroup_selected = new AR.AnimationGroup(AR.CONST.ANIMATION_GROUP_TYPE.PARALLEL, [
                             hideIdleDrawableAnimation,
@@ -188,11 +165,9 @@ Pointer.prototype.setSelected = function(pointer) {
                             idleDrawableResizeAnimationX,
                             selectedDrawableResizeAnimationX,
                             titleLabelResizeAnimationX,
-                            descriptionLabelResizeAnimationX,
                             idleDrawableResizeAnimationY,
                             selectedDrawableResizeAnimationY,
-                            titleLabelResizeAnimationY,
-                            descriptionLabelResizeAnimationY
+                            titleLabelResizeAnimationY
         ]);
     }
 
@@ -229,10 +204,6 @@ Pointer.prototype.setDeselected = function(pointer) {
             amplitude: 2.0
         }));
 
-        var descriptionLabelResizeAnimationX = new AR.PropertyAnimation(pointer.descriptionLabel, 'scale.x', null, 1.0, resizeAnimationDurationInMS, new AR.EasingCurve(AR.CONST.EASING_CURVE_TYPE.EASE_OUT_ELASTIC, {
-            amplitude: 2.0
-        }));
-
         var idleDrawableResizeAnimationY = new AR.PropertyAnimation(pointer.pointerDrawable_idle, 'scale.y', null, 1.0, resizeAnimationDurationInMS, new AR.EasingCurve(AR.CONST.EASING_CURVE_TYPE.EASE_OUT_ELASTIC, {
             amplitude: 2.0
         }));
@@ -245,21 +216,15 @@ Pointer.prototype.setDeselected = function(pointer) {
             amplitude: 2.0
         }));
 
-        var descriptionLabelResizeAnimationY = new AR.PropertyAnimation(pointer.descriptionLabel, 'scale.y', null, 1.0, resizeAnimationDurationInMS, new AR.EasingCurve(AR.CONST.EASING_CURVE_TYPE.EASE_OUT_ELASTIC, {
-            amplitude: 2.0
-        }));
-
         pointer.animationGroup_idle = new AR.AnimationGroup(AR.CONST.ANIMATION_GROUP_TYPE.PARALLEL, [
                         showIdleDrawableAnimation,
                         hideSelectedDrawableAnimation,
                         idleDrawableResizeAnimationX,
                         selectedDrawableResizeAnimationX,
                         titleLabelResizeAnimationX,
-                        descriptionLabelResizeAnimationX,
                         idleDrawableResizeAnimationY,
                         selectedDrawableResizeAnimationY,
-                        titleLabelResizeAnimationY,
-                        descriptionLabelResizeAnimationY
+                        titleLabelResizeAnimationY
         ]);
     }
 
