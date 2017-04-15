@@ -13,7 +13,7 @@ var World = {
 	// selected pointer
 	currentPointer: null,
 
-	loadPoisFromJsonData: function loadPoisFromJsonDataFn(poiData) {
+	loadPointersFromJsonData: function loadPoisFromJsonDataFn(poiData) {
 
 		World.pointerList = [];
 
@@ -34,8 +34,18 @@ var World = {
 			World.pointerList.push(new Pointer(singlePoi));
 		}
 
+        // updates distance information of all place marks
+        World.preCalculatePointersDistance();
+
 		World.updateStatusMessage(currentPlaceNr + ' places loaded');
 	},
+
+    // calculating distance while loading pointers
+    preCalculatePointersDistance: function preCalculatePointersDistanceFn() {
+        for (var i = 0; i < World.pointerList.length; i++) {
+            World.pointerList[i].distanceToUser = World.pointerList[i].pointerObject.locations[0].distanceToUser();
+        }
+    },
 
     //shows the message once all the data is loaded
 	updateStatusMessage: function updateStatusMessageFn(message, isWarning) {
@@ -62,18 +72,29 @@ var World = {
 	},
 
 	onPointerSelected: function onPointerSelectedFn(pointer) {
-
-		// deselect previous pointer
-		if (World.currentPointer) {
-			if (World.currentPointer.ptrCoordinates.id == pointer.ptrCoordinates.id) {
-				return;
-			}
-			World.currentPointer.setDeselected(World.currentPointer);
-		}
-
-		// highlight current one
-		pointer.setSelected(pointer);
 		World.currentPointer = pointer;
+
+        // update panel values
+        $("#pointerTitle").html(pointer.ptrCoordinates.title);
+        $("#pointerDescription").html(pointer.ptrCoordinates.description);
+
+        //in-case distance wasn't calculated properly, re-calculate it
+        if( undefined == pointer.distanceToUser ) {
+            pointer.distanceToUser = pointer.pointerObject.locations[0].distanceToUser();
+        }
+
+        //calculating the unit of distance from user location to the pointer
+        var distanceWithUnit = (pointer.distanceToUser > 999) ? ((pointer.distanceToUser / 1000).toFixed(2) + " km") : (Math.round(pointer.distanceToUser) + " m");
+        $("#pointerDistance").html(distanceWithUnit);
+
+        // show panel
+        $("#pointerDataPanel").panel("open");
+
+        //using jquery mobile 'panelbeforeclose' call back to deselect the selected pointer as well while closing panel
+        $("#pointerDataPanel").on("panelbeforeclose", function(event, ui) {
+            World.currentPointer.setDeselected(World.currentPointer);
+        });
+
 	},
 
 	// screen was clicked but no geo-object was hit
@@ -85,7 +106,7 @@ var World = {
 
 	// request POI dat
 	requestDataFromLocal: function requestDataFromLocalFn(lat, lon) {
-		World.loadPoisFromJsonData(pointersData);
+		World.loadPointersFromJsonData(pointersData);
 	}
 
 };

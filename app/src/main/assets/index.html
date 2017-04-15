@@ -26,6 +26,8 @@
     
     <body >
      <div data-role="page" id="page1" style="background: none;" >
+
+            <!-- Footer -->
             <div data-role="footer" class="ui-bar" data-theme="f" data-position="fixed" style="text-align:center;">
                 <!-- button for in app debugging -->
                 <a style="text-align:right;" id="popupInfoButton" href="#popupInfo" data-rel="popup" data-role="button" class="ui-icon-alt"
@@ -35,6 +37,28 @@
                   <p style="text-align:right;" id="status-message">Looks like GPS is not working</p>
                 </div>
             </div>
+
+         <!-- pointer's details -->
+         <div data-role="panel" id="pointerDataPanel" data-position="right" data-display="overlay" style="background-color:#F0F0F0;" data-theme="c">
+
+             <div data-role="header" data-theme="c">
+                 <h1>Information</h1>
+                 <a href="#header" data-rel="close">Close</a>
+             </div>
+
+             <div data-role="content">
+
+                 <!-- title -->
+                 <h3 id="pointerTitle"></h3>
+
+                 <!-- description -->
+                 <h4 id="pointerDescription"></h4>
+
+                 <!-- distance -->
+                 <h4>Distance: <a id="pointerDistance"></a></h4>
+             </div>
+         </div>
+
         </div>
     </body>
 </html>
