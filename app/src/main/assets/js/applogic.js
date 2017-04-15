@@ -37,7 +37,7 @@ var World = {
 			World.pointerList.push(new Pointer(singlePoi));
 		}
 
-        // updates distance information of all place marks
+        // updates distance information of all places
         World.preCalculatePointersDistance();
 
 		World.updateStatusMessage(currentPlaceNr + ' places loaded');
@@ -107,7 +107,21 @@ var World = {
 		}
 	},
 
-	// request POI dat
+    showDetailsInAndroidActivity: function showDetailsInAndroidActivityFn() {
+        var currentPointer = World.currentPointer;
+        var pointerSelectedJSON = {
+            action: "pointer_detailed_activity",
+            id: currentPointer.ptrCoordinates.id,
+            title: currentPointer.ptrCoordinates.title,
+            description: currentPointer.ptrCoordinates.description
+        };
+        /*
+         The sendJSONObject method can be used to send data from javascript to the native code.
+         */
+        AR.platform.sendJSONObject(pointerSelectedJSON);
+    },
+
+	// request data
 	requestDataFromLocal: function requestDataFromLocalFn(lat, lon) {
 		World.loadPointersFromJsonData(pointersData);
 	}

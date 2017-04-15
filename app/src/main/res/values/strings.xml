@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">GeoAugmentFulda</string>
+    <string name="title_activity_pointer_details">Pointer Details</string>
+
+    <string name="pointer_id">Id: </string>
+    <string name="pointer_title">Title: </string>
+    <string name="pointer_description">Description: </string>
+
 </resources>
