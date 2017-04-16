@@ -20,6 +20,10 @@ var World = {
         $('#radarDiv').unbind('click');
         $("#radarDiv").click(World.clickedRadar);
 
+        //setting photo swipe
+        $('#showImages').unbind('click');
+        $("#showImages").click(World.openPhotoSwipe);
+
 		World.pointerList = [];
 
 		World.pointerDrawable_idle = new AR.ImageResource("assets/pointer_idle.png");
@@ -35,7 +39,8 @@ var World = {
 				"title": poiData[i].name,
 				"description": poiData[i].description,
                 "buildingName": poiData[i].buildingName,
-                "thumbnailURL": poiData[i].thumbnailURL
+                "thumbnailURL": poiData[i].thumbnailURL,
+                "buildingImages": poiData[i].buildingImages
 			};
 
 			World.pointerList.push(new Pointer(singlePointer));
@@ -168,6 +173,35 @@ var World = {
     //when a user click on a building in all buildings list view panel at the left of screen
     onBuildingClickFromList: function onBuildingClickFromListFn(pointer) {
         World.onPointerSelected(pointer);
+    },
+
+    openPhotoSwipe: function openPhotoSwipeFn() {
+
+        if(World.currentPointer.ptrCoordinates.buildingImages != undefined) {
+
+            var currentPointer = World.currentPointer;
+            // build items array
+            var items = currentPointer.ptrCoordinates.buildingImages;
+
+            var pswpElement = document.querySelectorAll('.pswp')[0];
+
+            // define options (if needed)
+            var options = {
+                // history & focus options are disabled on CodePen
+                history: false,
+                focus: false,
+
+                showAnimationDuration: 0,
+                hideAnimationDuration: 0
+
+            };
+
+            var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+            gallery.init();
+        } else {
+            console.log("test");
+            $.mobile.changePage('#noImgErrorDialog', 'pop', true, true);
+        }
     }
 
 };

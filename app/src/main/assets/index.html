@@ -9,6 +9,12 @@
     
     <title>Augment HS Fulda</title>
 
+    <!-- Photo-swipe Gallery -->
+    <link rel="stylesheet" href="css/photoswipe.css">
+    <link rel="stylesheet" href="css/default-skin/default-skin.css">
+    <script src="js/photoswipe/photoswipe.min.js"></script>
+    <script src="js/photoswipe/photoswipe-ui-default.min.js"></script>
+
     <script src="https://www.wikitude.com/libs/architect.js"></script>
     <script src="js/ade.js"></script>
 
@@ -28,7 +34,56 @@
 </head>
     
     <body >
+
      <div data-role="page" id="page1" style="background: none;" >
+
+         <!-- Photoswipe [start] . -->
+         <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+             <!-- Background of PhotoSwipe.
+                  It's a separate element as animating opacity is faster than rgba(). -->
+             <div class="pswp__bg"></div>
+
+             <!-- Slides wrapper with overflow:hidden. -->
+             <div class="pswp__scroll-wrap">
+
+                 <!-- Container that holds slides.
+                     PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                     Don't modify these 3 pswp__item elements, data is added later on. -->
+                 <div class="pswp__container">
+                     <div class="pswp__item"></div>
+                     <div class="pswp__item"></div>
+                     <div class="pswp__item"></div>
+                 </div>
+
+                 <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                 <div class="pswp__ui pswp__ui--hidden">
+
+                     <div class="pswp__top-bar">
+
+                         <div class="pswp__counter"></div>
+
+                         <div class="pswp__preloader">
+                             <div class="pswp__preloader__icn">
+                                 <div class="pswp__preloader__cut">
+                                     <div class="pswp__preloader__donut"></div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+
+                     <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                         <div class="pswp__share-tooltip"></div>
+                     </div>
+
+                     <div class="pswp__caption">
+                         <div class="pswp__caption__center"></div>
+                     </div>
+                 </div>
+
+             </div>
+         </div>
+         <!-- Photoswipe [end] . -->
 
          <!-- Wikitude Radar Component -->
         <div class="radar-top-left" id="radarDiv"></div>
@@ -62,6 +117,8 @@
                  <!-- distance -->
                  <h4>Distance: <a id="pointerDistance"></a></h4>
 
+                 <button id="showImages">Open PhotoSwipe</button>
+
                  <!-- more button-->
                  <a href="javascript: World.showDetailsInAndroidActivity();" data-role="button" data-icon="arrow-r" data-iconpos="right" data-inline="true">Details</a>
 
@@ -85,5 +142,19 @@
          </div>
 
         </div>
+
+         <!-- show error if no images exists -->
+         <div data-role="dialog" data-theme="a" id="noImgErrorDialog">
+             <div data-role="content" id="text">
+                 Sorry no images found for selected building, please retry later!
+                 <a href="#" data-role="button" data-inline="true" data-rel="back" data-theme="c" data-corners="true" data-shadow="true" data-iconshadow="true"
+                    data-wrapperels="span" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-inline ui-btn-up-c">
+                     <span class="ui-btn-inner ui-btn-corner-all">
+                         <span class="ui-btn-text">Ok!</span>
+                     </span>
+                 </a>
+             </div>
+         </div>
+
     </body>
 </html>
