@@ -29,6 +29,7 @@ function Pointer(ptrCoordinates) {
     // Pointer title AR.Label
     this.titleLabel = new AR.Label(ptrCoordinates.title.trunc(10), 1, {
         zOrder: 1,
+        scale: 0.35,
         translate: {
             y: 0.45
         },
@@ -141,7 +142,7 @@ Pointer.prototype.setSelected = function(pointer) {
         var titleLabelResizeAnimationX = new AR.PropertyAnimation(pointer.titleLabel,
                             'scale.x',
                             null,
-                            1.2,
+                            0.45,
                             resizeAnimationDurationInMS,
                             new AR.EasingCurve(AR.CONST.EASING_CURVE_TYPE.EASE_OUT_ELASTIC, {amplitude: 2.0})
         );
@@ -154,7 +155,7 @@ Pointer.prototype.setSelected = function(pointer) {
             amplitude: 2.0
         }));
 
-        var titleLabelResizeAnimationY = new AR.PropertyAnimation(pointer.titleLabel, 'scale.y', null, 1.2, resizeAnimationDurationInMS, new AR.EasingCurve(AR.CONST.EASING_CURVE_TYPE.EASE_OUT_ELASTIC, {
+        var titleLabelResizeAnimationY = new AR.PropertyAnimation(pointer.titleLabel, 'scale.y', null, 0.45, resizeAnimationDurationInMS, new AR.EasingCurve(AR.CONST.EASING_CURVE_TYPE.EASE_OUT_ELASTIC, {
             amplitude: 2.0
         }));
 
@@ -200,7 +201,7 @@ Pointer.prototype.setDeselected = function(pointer) {
             amplitude: 2.0
         }));
 
-        var titleLabelResizeAnimationX = new AR.PropertyAnimation(pointer.titleLabel, 'scale.x', null, 1.0, resizeAnimationDurationInMS, new AR.EasingCurve(AR.CONST.EASING_CURVE_TYPE.EASE_OUT_ELASTIC, {
+        var titleLabelResizeAnimationX = new AR.PropertyAnimation(pointer.titleLabel, 'scale.x', null, 0.35, resizeAnimationDurationInMS, new AR.EasingCurve(AR.CONST.EASING_CURVE_TYPE.EASE_OUT_ELASTIC, {
             amplitude: 2.0
         }));
 
@@ -212,7 +213,7 @@ Pointer.prototype.setDeselected = function(pointer) {
             amplitude: 2.0
         }));
 
-        var titleLabelResizeAnimationY = new AR.PropertyAnimation(pointer.titleLabel, 'scale.y', null, 1.0, resizeAnimationDurationInMS, new AR.EasingCurve(AR.CONST.EASING_CURVE_TYPE.EASE_OUT_ELASTIC, {
+        var titleLabelResizeAnimationY = new AR.PropertyAnimation(pointer.titleLabel, 'scale.y', null, 0.35, resizeAnimationDurationInMS, new AR.EasingCurve(AR.CONST.EASING_CURVE_TYPE.EASE_OUT_ELASTIC, {
             amplitude: 2.0
         }));
 

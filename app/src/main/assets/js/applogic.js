@@ -22,7 +22,7 @@ var World = {
 
         //setting photo swipe
         $('#showImages').unbind('click');
-        $("#showImages").click(World.openPhotoSwipe);
+        $("#showImages").click(World.configurePhotoSwipe);
 
 		World.pointerList = [];
 
@@ -175,7 +175,7 @@ var World = {
         World.onPointerSelected(pointer);
     },
 
-    openPhotoSwipe: function openPhotoSwipeFn() {
+    configurePhotoSwipe: function configurePhotoSwipeFn() {
 
         if(World.currentPointer.ptrCoordinates.buildingImages != undefined) {
 
@@ -199,7 +199,6 @@ var World = {
             var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
             gallery.init();
         } else {
-            console.log("test");
             $.mobile.changePage('#noImgErrorDialog', 'pop', true, true);
         }
     }

@@ -1,224 +1,175 @@
 
 var pointersData = [
-//{
-//    "id": 1,
-//    "longitude": 9.68668554,
-//    "latitude": 50.56332801,
-//    "altitude": 298,
-//    "name": "PB",
-//    "description": "You can eat Pizza here"
-//},
-    //                      {
-    //                      	"id": 2,
-    //                      	"longitude": 9.68558952,
-    //                      	"latitude": 50.5626844,
-    //                      	"altitude": 294,
-    //                      	"name": "H",
-    //                      	"description": "Bus#06 comes here every 30 min"
-    //                      },
-    //                      {
-    //                      	"id": 3,
-    //                      	"longitude": 9.686995,
-    //                      	"latitude": 50.56334718,
-    //                      	"altitude": 298,
-    //                      	"name": "H",
-    //                      	"description": "Bus#06 comes here every 30 min"
-    //                      },
-//    {
-//        "id": 4,
-//        "longitude": 9.669704,
-//        "latitude": 50.551618,
-//        "altitude": 280,
-//        "name": "I",
-//        "description": "Home"
-//    },
     {
-        "id": 5,
-        "longitude": 9.68677238,
-        "latitude": 50.56355164,
-        "altitude": 300,
-        "name": "L",
-        "buildingName": "Building # 31 (L)",
-        "description": "Building # 31 (L)",
+        "id": 1,
+        "longitude": 9.686970,
+        "latitude": 50.563331,
+        "altitude": 294,
+        "name": "H2",
+        "description": "Bus Stop towards Hochschule. Bus # 06 comes here every 30 minutes towards the direction of Hochschule.",
+        "buildingName": "Bus Stop > HS",
         "thumbnailURL": "http://i.imgur.com/DnDoIjl.jpg",
         "buildingImages": [
             {
                 "src": "https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg",
                 "w": 964,
-                "h": 1024
-            },
-            {
-                "src": 'https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg',
-                "w": 1024,
-                "h": 683
+                "h": 1024,
+                "title": 'Image1 Caption'
             }
         ]
     },
-//    {
-//        "id": 6,
-//        "longitude": 9.68592748,
-//        "latitude": 50.56379869,
-//        "altitude": 301,
-//        "name": "L1",
-//        "description": "Building # 32 (L1)"
-//    },
-//    {
-//        "id": 7,
-//        "longitude": 9.68505576,
-//        "latitude": 50.5637578,
-//        "altitude": 300,
-//        "name": "F",
-//        "description": "Building # 42 (F)"
-//    },
-//    {
-//        "id": 8,
-//        "longitude": 9.68567401,
-//        "latitude": 50.564165,
-//        "altitude": 301,
-//        "name": "B",
-//        "description": "Building # 41 (B)"
-//    },
-//    {
-//        "id": 9,
-//        "longitude": 9.68622655,
-//        "latitude": 50.56462161,
-//        "altitude": 303,
-//        "name": "A",
-//        "description": "Building # 40 (A)"
-//    },
-//    {
-//        "id": 10,
-//        "longitude": 9.68504906,
-//        "latitude": 50.56412411,
-//        "altitude": 300,
-//        "name": "C",
-//        "description": "Building # 43 (C)"
-//    },
-//    {
-//        "id": 11,
-//        "longitude": 9.68533337,
-//        "latitude": 50.56445635,
-//        "altitude": 301,
-//        "name": "C1",
-//        "description": "Building # 44 (C1) SSC"
-//    },
-//    {
-//        "id": 12,
-//        "longitude": 9.68655914,
-//        "latitude": 50.56456368,
-//        "altitude": 304,
-//        "name": "K",
-//        "description": "Building # 33 (K)"
-//    },
-//    {
-//        "id": 13,
-//        "longitude": 9.6875006,
-//        "latitude": 50.56434901,
-//        "altitude": 305,
-//        "name": "M",
-//        "description": "Building # 30 (M)"
-//    },
-//    {
-//        "id": 14,
-//        "longitude": 9.68512952,
-//        "latitude": 50.56472554,
-//        "altitude": 301,
-//        "name": "D",
-//        "description": "45D-Sports Building"
-//    },
     {
-        "id": 15,
-        "longitude": 9.68562305,
-        "latitude": 50.56505777,
-        "altitude": 302,
-        "name": "E",
-        "buildingName": "Building # E",
-        "description": "Department of Computer Science. All labs such as Linux / IOS are here. Major CS classes also held in this same building.",
-        "thumbnailURL": "http://i.imgur.com/DnDoIjl.jpg"
+        "id": 2,
+        "longitude": 9.685557,
+        "latitude": 50.562698,
+        "altitude": 298,
+        "name": "H1",
+        "description": "Bus Stop towards ZOB. Bus # 06 comes here every 30 minutes towards the direction of ZOB / Fulda Bahnhof",
+        "buildingName": "BusStop > ZOB",
+        "thumbnailURL": "http://i.imgur.com/DnDoIjl.jpg",
+        "buildingImages": [
+              {
+                  "src": "https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg",
+                  "w": 964,
+                  "h": 1024,
+                  "title": 'Image1 Caption'
+              }
+        ]
     },
     {
-        "id": 17,
-        "longitude": 9.68475401,
-        "latitude": 50.56518214,
+        "id": 3,
+        "longitude": 9.685239,
+        "latitude": 50.564062,
         "altitude": 300,
-        "name": "G",
+        "name": "C (43)",
+        "description": "Offices of the concerned persons for international student's consultation specially M.Sc. GSD group. Advisers such as Ms. Hirth, Mrs. Beate etc. sits here. Also issues related to System2Teach could be solved by visiting Room # 07.",
+        "buildingName": "Building # 43 (C)",
+        "thumbnailURL": "http://i.imgur.com/DnDoIjl.jpg",
+        "buildingImages": [
+            {
+                "src": "https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Image1 Caption'
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "longitude": 9.686009,
+        "latitude": 50.564914,
+        "altitude": 302,
+        "name": "E (46)",
+        "buildingName": "Building # 46 (E)",
+        "description": "Main building for Department of Computer Science. All labs such as Linux, Cloud Computing or IOS are here. Major CS classes also held in this same building.",
+        "thumbnailURL": "http://i.imgur.com/DnDoIjl.jpg",
+        "buildingImages": [
+            {
+                "src": "https://s3.eu-central-1.amazonaws.com/ar-fulda-app/E/11907138_10152966667161927_5291348677797562027_n.jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Image1 Caption'
+            },
+            {
+                "src": 'https://s3.eu-central-1.amazonaws.com/ar-fulda-app/E/MVC-Wikitude.PNG',
+                "w": 1024,
+                "h": 683,
+                "title": 'Image2 Caption'
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "longitude": 9.684593,
+        "latitude": 50.564979,
+        "altitude": 300,
+        "name": "G (51)",
         "buildingName": "Building # 51 (G)",
-        "description": "Building # 51 (G)",
-        "thumbnailURL": "http://i.imgur.com/DnDoIjl.jpg"
-    },
-//    {
-//        "id": 18,
-//        "longitude": 9.68476206,
-//        "latitude": 50.56556208,
-//        "altitude": 300,
-//        "name": "J",
-//        "description": "Building # 50 (J)"
-//    },
-//    {
-//        "id": 19,
-//        "longitude": 9.6879673,
-//        "latitude": 50.5649351,
-//        "altitude": 307,
-//        "name": "N",
-//        "description": "Building # 20 (N)"
-//    },
-//    {
-//        "id": 20,
-//        "longitude": 9.6883589,
-//        "latitude": 50.56556208,
-//        "altitude": 307,
-//        "name": "O",
-//        "description": "Building # 21 (O)"
-//    },
-    {
-        "id": 21,
-        "longitude": 9.68886316,
-        "latitude": 50.56611067,
-        "altitude": 307,
-        "name": "P",
-        "description": "Building # 22 (P)",
-        "thumbnailURL": "http://i.imgur.com/DnDoIjl.jpg"
+        "description": "You can find offices of the Professors here (Prof. Todenhöfer, Prof. Herpers. etc). There are two computer labs with a printing room as well in this building.",
+        "thumbnailURL": "http://i.imgur.com/DnDoIjl.jpg",
+        "buildingImages": [
+            {
+                "src": "https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Image1 Caption'
+            }
+        ]
     },
     {
-        "id": 22,
+        "id": 6,
         "longitude": 9.68942642,
         "latitude": 50.56657749,
         "altitude": 307,
-        "name": "Q",
-        "buildingName": "Building # Q",
-        "description": "Studentenwerk-Q",
-        "thumbnailURL": "http://i.imgur.com/DnDoIjl.jpg"
+        "name": "Q (23)",
+        "description": "Few of social sciences related classes held in this building. Beside this building you can find the offices of Studentenwerk.",
+        "buildingName": "Building # 23 (Q)",
+        "thumbnailURL": "http://i.imgur.com/DnDoIjl.jpg",
+        "buildingImages": [
+            {
+                "src": "https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Image1 Caption'
+            }
+        ]
     },
     {
-        "id": 23,
-        "longitude": 9.68761325,
-        "latitude": 50.56504414,
+        "id": 7,
+        "longitude": 9.687292,
+        "latitude": 50.564968,
         "altitude": 306,
-        "name": "U",
-        "buildingName": "Building # U",
-        "description": "U-Bibliothek",
-        "thumbnailURL": "http://i.imgur.com/DnDoIjl.jpg"
+        "name": "U (12)",
+        "buildingName": "Building # 12 (U)",
+        "description": "Bibliothek / Library of the university. Books can be borrowed from the library using library's web portal for 5 weeks. This can be extended as well.",
+        "thumbnailURL": "http://i.imgur.com/DnDoIjl.jpg",
+        "buildingImages": [
+            {
+                "src": "https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Image1 Caption'
+            }
+        ]
     },
-//    {
-//        "id": 24,
-//        "longitude": 9.68731821,
-//        "latitude": 50.56562682,
-//        "altitude": 304,
-//        "name": "T",
-//        "description": "Mensa-T"
-//    },
     {
-        "id": 25,
-        "longitude": 9.68650818,
-        "latitude": 50.56517363,
+        "id": 8,
+        "longitude": 9.687285,
+        "latitude": 50.565852,
         "altitude": 304,
-        "name": "S",
-        "buildingName": "Building # S",
-        "description": "International student service center. Should visit for registration or issues.",
-        "thumbnailURL": "http://i.imgur.com/DnDoIjl.jpg"
+        "name": "T (11)",
+        "description": "MENSA. This is basically the place to eat. Students gets subsidy on the lunch and refreshments. You need to charge your ID CARD using the machine outside for paying. No money accepts here.",
+        "buildingName": "Building # 11 (T)",
+        "thumbnailURL": "http://i.imgur.com/DnDoIjl.jpg",
+        "buildingImages": [
+            {
+                "src": "https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Image1 Caption'
+            }
+        ]
     },
     {
-        "id": 29,
+        "id": 9,
+        "longitude": 9.686089,
+        "latitude": 50.565859,
+        "altitude": 304,
+        "name": "S (10)",
+        "buildingName": "Building # 10 (S)",
+        "description": "SSC. International students service center where you can register yourself, get whatever information you want from front office. You can also visit to get advise from counsellors.",
+        "thumbnailURL": "http://i.imgur.com/DnDoIjl.jpg",
+        "buildingImages": [
+            {
+                "src": "https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Image1 Caption'
+            }
+        ]
+    },
+    {
+        "id": 10,
         "longitude": 9.6713135,
         "latitude": 50.5497386,
         "altitude": 252,
@@ -228,12 +179,12 @@ var pointersData = [
         "thumbnailURL": "http://i.imgur.com/DnDoIjl.jpg"
     },
     {
-        "id": 30,
+        "id": 11,
         "longitude": 9.66860443,
         "latitude": 50.54844334,
         "altitude": 247,
         "name": "PRK",
-        "buildingName": "Joggin Park",
+        "buildingName": "Jogging Park",
         "description": "Beautiful Park",
         "thumbnailURL": "http://i.imgur.com/DnDoIjl.jpg"
     }];
