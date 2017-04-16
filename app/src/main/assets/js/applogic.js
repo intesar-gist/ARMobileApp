@@ -40,7 +40,7 @@ var World = {
         // updates distance information of all places
         World.preCalculatePointersDistance();
 
-		World.updateStatusMessage('AugmentFulda currently supports ' + i + ' buildings');
+		World.updateStatusMessage('App currently supports ' + i + ' buildings');
 	},
 
     // calculating distance while loading pointers
@@ -69,7 +69,7 @@ var World = {
 	locationChanged: function locationChangedFn(lat, lon, alt, acc) {
 
 		if (!World.initiallyLoadedData) {
-			World.requestDataFromLocal(lat, lon, alt, acc);
+			World.loadDataFromDataFile(lat, lon, alt, acc);
 			World.initiallyLoadedData = true;
 		}
 	},
@@ -124,7 +124,7 @@ var World = {
     },
 
 	// request data
-	requestDataFromLocal: function requestDataFromLocalFn(lat, lon, alt, acc) {
+	loadDataFromDataFile: function loadDataFromDataFileFn(lat, lon, alt, acc) {
 		World.loadPointersFromJsonData(pointersData);
 
         /*******************
