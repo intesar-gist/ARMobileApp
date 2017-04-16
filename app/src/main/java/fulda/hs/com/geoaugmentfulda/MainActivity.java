@@ -1,10 +1,10 @@
 package fulda.hs.com.geoaugmentfulda;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.location.Location;
 import android.location.LocationListener;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -15,7 +15,7 @@ import com.wikitude.architect.ArchitectView;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     public static final String WIKITUDE_KEY = "gTNjGJo5eZdypPFIDTqRtHSlZ5vAvxbETtkvGgCd/gQOPZU69m47c+8zDd3z9ArZYlr28oikRrzCiirtzRTvumDd6AqzHcB8ixHXKZIApg53xyBBV1X9jMrQclu9xlvdG9g2GLk8YrhJ8T5kqsFwEUWf57arRL1DcfQmmUJpa/BTYWx0ZWRfX8SUgm+5Kep8BjGfwEuO/P8/AislYPIGpi8W0O013kMy2T9dJpOmhPzChO1hwE4eAtMFotT+NZrRIv+zPyJ+MngUHDHM3NxNcSVzkKayrFLRhtWKFx52iiDQipGTMDkFq5uJHKw698hFhBvQork84xjvdZpIPdZSjLvoYEoxdDWhhR1Qc9ytGAckKt5cyqkUaiJRxh1YccB7b8f+rq4Z8s9131O/wDBws2clWyGbvekfY96QWYwor35GWfSmFKEtJ71l+gC/djfRoTG9ispiYbMuisDzpiH7AovH0b8rtrxtQHuhWgurtPKdWrVUJM7PVTnPvJtCUoDnix4DTbIjhwNzAa9+NK/4YseGNeuq5xpYElWa428niZLfIosNAWrksISboiqCsksBrNx0qZJKUigP7Sih1Fqqynd8c7aJo/F6j7x69eMqGhFYGdi2P3fW5IJ4cAIO2nmgtVCznIedkw0OpqPvwf4QqFiQ4O+A1s+Pk5/g6BYe5HJEAe/8tOvaQUc8qBq9Nfqg";
     private ArchitectView architectView;

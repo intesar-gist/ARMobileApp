@@ -15,15 +15,6 @@ var World = {
 
 	loadPointersFromJsonData: function loadPoisFromJsonDataFn(poiData) {
 
-        // show radar & set click-listener
-        PointersRadar.show();
-        $('#radarDiv').unbind('click');
-        $("#radarDiv").click(World.clickedRadar);
-
-        //setting photo swipe
-        $('#showImages').unbind('click');
-        $("#showImages").click(World.configurePhotoSwipe);
-
 		World.pointerList = [];
 
 		World.pointerDrawable_idle = new AR.ImageResource("assets/pointer_idle.png");
@@ -49,7 +40,7 @@ var World = {
         // updates distance information of all places
         World.preCalculatePointersDistance();
 
-		World.updateStatusMessage(i + ' places loaded');
+		World.updateStatusMessage('AugmentFulda currently supports ' + i + ' buildings');
 	},
 
     // calculating distance while loading pointers
@@ -78,7 +69,7 @@ var World = {
 	locationChanged: function locationChangedFn(lat, lon, alt, acc) {
 
 		if (!World.initiallyLoadedData) {
-			World.requestDataFromLocal(lat, lon);
+			World.requestDataFromLocal(lat, lon, alt, acc);
 			World.initiallyLoadedData = true;
 		}
 	},
@@ -133,8 +124,20 @@ var World = {
     },
 
 	// request data
-	requestDataFromLocal: function requestDataFromLocalFn(lat, lon) {
+	requestDataFromLocal: function requestDataFromLocalFn(lat, lon, alt, acc) {
 		World.loadPointersFromJsonData(pointersData);
+
+        /*******************
+         * Configure assets
+         *******************/
+        // show radar & set click-listener
+        PointersRadar.show();
+        $('#radarDiv').unbind('click');
+        $("#radarDiv").click(PointersRadar.clickedRadar);
+
+        //configuring photo gallery and click listener
+        ImageGallery.init();
+
 	},
 
     showLoader : function showLoaderFn() {
@@ -158,49 +161,9 @@ var World = {
         $.mobile.loading( "hide" );
     },
 
-    //when user clicks on the radar, show him all the available buildings / markers
-    clickedRadar: function clickedRadarFn() {
-        // show panel
-        var output = '';
-        for (var i = 0; i < World.pointerList.length; i++) {
-            output += ' <li><a href="javascript: World.onBuildingClickFromList(World.pointerList['+i+']);"><img src="'+World.pointerList[i].ptrCoordinates.thumbnailURL+'">'+World.pointerList[i].ptrCoordinates.title+'</a></li>';
-        }
-
-        $('#buildingDetailsLV').html(output).listview("refresh");
-        $("#allPtrsListPanel").panel("open");
-    },
-
     //when a user click on a building in all buildings list view panel at the left of screen
     onBuildingClickFromList: function onBuildingClickFromListFn(pointer) {
         World.onPointerSelected(pointer);
-    },
-
-    configurePhotoSwipe: function configurePhotoSwipeFn() {
-
-        if(World.currentPointer.ptrCoordinates.buildingImages != undefined) {
-
-            var currentPointer = World.currentPointer;
-            // build items array
-            var items = currentPointer.ptrCoordinates.buildingImages;
-
-            var pswpElement = document.querySelectorAll('.pswp')[0];
-
-            // define options (if needed)
-            var options = {
-                // history & focus options are disabled on CodePen
-                history: false,
-                focus: false,
-
-                showAnimationDuration: 0,
-                hideAnimationDuration: 0
-
-            };
-
-            var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
-            gallery.init();
-        } else {
-            $.mobile.changePage('#noImgErrorDialog', 'pop', true, true);
-        }
     }
 
 };

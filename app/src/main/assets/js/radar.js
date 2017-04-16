@@ -23,6 +23,18 @@ var PointersRadar = {
         AR.radar.enabled = true;
     },
 
+    //when user clicks on the radar, show him all the available buildings / markers
+    clickedRadar: function clickedRadarFn() {
+        // show panel
+        var output = '';
+        for (var i = 0; i < World.pointerList.length; i++) {
+            output += ' <li><a href="javascript: World.onBuildingClickFromList(World.pointerList['+i+']);"><img src="'+World.pointerList[i].ptrCoordinates.thumbnailURL+'">'+World.pointerList[i].ptrCoordinates.title+'</a></li>';
+        }
+
+        $('#buildingDetailsLV').html(output).listview("refresh");
+        $("#allPtrsListPanel").panel("open");
+    },
+
     updatePosition: function updatePositionFn() {
         if (AR.radar.enabled) {
             AR.radar.notifyUpdateRadarPosition();
