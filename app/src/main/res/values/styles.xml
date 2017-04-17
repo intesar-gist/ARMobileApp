@@ -12,7 +12,7 @@
     </style>
 
     <style name="CustomActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
-        <item name="android:background">@android:color/holo_blue_dark</item>
+        <item name="android:background">@color/fuldaColor</item>
         <item name="android:titleTextStyle">@style/CustomTextColor</item>
     </style>
 

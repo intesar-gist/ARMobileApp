@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GeoAugmentFulda</string>
+    <string name="app_name">Augment Fulda</string>
     <string name="title_activity_pointer_details">Pointer Details</string>
 
     <string name="pointer_id">Id: </string>
