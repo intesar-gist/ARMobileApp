@@ -1,3 +1,11 @@
+/**
+ * INTESAR HAIDER
+ * matriulation # 147167
+ * @type {{initiallyLoadedData: boolean, pointerDrawable_idle: null, pointerDrawable_selected: null, pointerDrawable_directionIndicator: null, pointerList: Array,
+ * currentPointer: null, loadPointersFromJsonData: Function, preCalculatePointersDistance: Function, updateStatusMessage: Function, locationChanged: Function,
+ * onPointerSelected: Function, onScreenClick: Function, showDetailsInAndroidActivity: Function, loadDataFromDataFile: Function, showLoader: Function,
+ * hideLoader: Function, onBuildingClickFromList: Function}}
+ */
 var World = {
 
 	initiallyLoadedData: false,

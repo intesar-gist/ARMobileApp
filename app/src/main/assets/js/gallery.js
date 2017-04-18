@@ -1,3 +1,8 @@
+/**
+ * INTESAR HAIDER
+ * matriulation # 147167
+ *
+ */
 var ImageGallery = {
 
     configurePhotoSwipe: function configurePhotoSwipeFn() {

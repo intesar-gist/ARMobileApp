@@ -1,3 +1,8 @@
+/**
+ * INTESAR HAIDER
+ * matriulation # 147167
+ *
+ */
 var visibilityAnimationDurationInMS = 500;
 var resizeAnimationDurationInMS = 1000;
 
