@@ -20,27 +20,26 @@ var ImgTracking = {
 
         this.imgButton = new AR.ImageResource("assets/tracking/wwwButton.jpg");
 
-        var imgOne = new AR.ImageResource("assets/tracking/imageOne.png");
-        var overlayOne = new AR.ImageDrawable(imgOne, 1, {
-            translate: {
-                x: -0.15
-            }
-        });
+        //var imgOne = new AR.ImageResource("assets/tracking/imageOne.png");
+        //var overlayOne = new AR.ImageDrawable(imgOne, 1, {
+        //    translate: {
+        //        x: -0.15
+        //    }
+        //});
 
-        var pageOneButton = this.createWwwButton("https://www.blue-tomato.com/en-US/products/?q=sup", 0.5, {
-            translate: {
-                x: -0.25,
-                y: -0.25
-            },
-            zOrder: 1
-        });
+        //var pageOneButton = this.createWwwButton("https://www.blue-tomato.com/en-US/products/?q=sup", 0.5, {
+        //    translate: {
+        //        x: -0.25,
+        //        y: -0.25
+        //    },
+        //    zOrder: 1
+        //});
 
         var weatherWidget = new AR.HtmlDrawable({
-            uri: "assets/tracking/weather.html"
-        }, 0.25, {
-            viewportWidth: 320,
+            uri: "assets/tracking/mensa.html"
+        }, 1, {
+            viewportWidth: 520,
             viewportHeight: 100,
-            backgroundColor: "#FFFFFF",
             translate: { x: 0.36, y: 0.5 },
             horizontalAnchor: AR.CONST.HORIZONTAL_ANCHOR.RIGHT,
             verticalAnchor: AR.CONST.VERTICAL_ANCHOR.TOP,
@@ -51,13 +50,16 @@ var ImgTracking = {
             }
         });
 
-        var pageOne = new AR.ImageTrackable(this.tracker, "pageOne", {
+        var pageOne = new AR.ImageTrackable(this.tracker, "*", {
             drawables: {
-                cam: [overlayOne, pageOneButton, weatherWidget]
+                cam: [weatherWidget]
             },
             //onImageRecognized: someFunction,
             onError: function(errorMessage) {
                 alert(errorMessage);
+            },
+            onImageRecognized: function (imgName) {
+                console.log(imgName);
             }
         });
 
