@@ -47,10 +47,40 @@ var pointersData = [
         "thumbnailURL": "http://i.imgur.com/DnDoIjl.jpg",
         "buildingImages": [
             {
-                "src": "https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg",
+                "src": "https://s3.eu-central-1.amazonaws.com/ar-fulda-app/C/c+(1).jpg",
                 "w": 964,
                 "h": 1024,
-                "title": 'Image1 Caption'
+                "title": 'Building # 43 (C)'
+            },
+            {
+                "src": "https://s3.eu-central-1.amazonaws.com/ar-fulda-app/C/c+(2).jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Building # 43 (C)'
+            },
+            {
+                "src": "https://s3.eu-central-1.amazonaws.com/ar-fulda-app/C/c+(3).jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Building # 43 (C)'
+            },
+            {
+                "src": "https://s3.eu-central-1.amazonaws.com/ar-fulda-app/C/c+(4).jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Building # 43 (C)'
+            },
+            {
+                "src": "https://s3.eu-central-1.amazonaws.com/ar-fulda-app/C/c+(5).jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Building # 43 (C)'
+            },
+            {
+                "src": "https://s3.eu-central-1.amazonaws.com/ar-fulda-app/C/c+(6).jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Building # 43 (C)'
             }
         ]
     },
@@ -65,16 +95,88 @@ var pointersData = [
         "thumbnailURL": "http://i.imgur.com/DnDoIjl.jpg",
         "buildingImages": [
             {
-                "src": "https://s3.eu-central-1.amazonaws.com/ar-fulda-app/E/11907138_10152966667161927_5291348677797562027_n.jpg",
-                "w": 964,
-                "h": 1024,
-                "title": 'Image1 Caption'
+                "src": "https://s3.eu-central-1.amazonaws.com/ar-fulda-app/E/e+(1).jpg",
+                "w": 1080,
+                "h": 1080,
+                "title": 'Building # 46 (E)'
             },
             {
-                "src": 'https://s3.eu-central-1.amazonaws.com/ar-fulda-app/E/MVC-Wikitude.PNG',
+                "src": 'https://s3.eu-central-1.amazonaws.com/ar-fulda-app/E/e+(2).jpg',
+                "w": 1080,
+                "h": 1080,
+                "title": 'Building # 46 (E)'
+            },
+            {
+                "src": 'https://s3.eu-central-1.amazonaws.com/ar-fulda-app/E/e+(3).jpg',
+                "w": 1080,
+                "h": 1080,
+                "title": 'Building # 46 (E)'
+            },
+            {
+                "src": 'https://s3.eu-central-1.amazonaws.com/ar-fulda-app/E/e+(4).jpg',
                 "w": 1024,
                 "h": 683,
-                "title": 'Image2 Caption'
+                "title": 'Building # 46 (E)'
+            },
+            {
+                "src": 'https://s3.eu-central-1.amazonaws.com/ar-fulda-app/E/e+(5).jpg',
+                "w": 1024,
+                "h": 683,
+                "title": 'Building # 46 (E)'
+            },
+            {
+                "src": 'https://s3.eu-central-1.amazonaws.com/ar-fulda-app/E/e+(6).jpg',
+                "w": 1024,
+                "h": 683,
+                "title": 'Building # 46 (E)'
+            },
+            {
+                "src": 'https://s3.eu-central-1.amazonaws.com/ar-fulda-app/E/e+(7).jpg',
+                "w": 1024,
+                "h": 683,
+                "title": 'Building # 46 (E)'
+            },
+            {
+                "src": 'https://s3.eu-central-1.amazonaws.com/ar-fulda-app/E/e+(8).jpg',
+                "w": 1024,
+                "h": 683,
+                "title": 'Building # 46 (E)'
+            },
+            {
+                "src": 'https://s3.eu-central-1.amazonaws.com/ar-fulda-app/E/e+(9).jpg',
+                "w": 1024,
+                "h": 683,
+                "title": 'Building # 46 (E)'
+            },
+            {
+                "src": 'https://s3.eu-central-1.amazonaws.com/ar-fulda-app/E/e+(10).jpg',
+                "w": 1024,
+                "h": 683,
+                "title": 'Building # 46 (E)'
+            },
+            {
+                "src": 'https://s3.eu-central-1.amazonaws.com/ar-fulda-app/E/e+(11).jpg',
+                "w": 1024,
+                "h": 683,
+                "title": 'Building # 46 (E)'
+            },
+            {
+                "src": 'https://s3.eu-central-1.amazonaws.com/ar-fulda-app/E/e+(12).jpg',
+                "w": 1024,
+                "h": 683,
+                "title": 'Building # 46 (E)'
+            },
+            {
+                "src": 'https://s3.eu-central-1.amazonaws.com/ar-fulda-app/E/e+(13).jpg',
+                "w": 1024,
+                "h": 683,
+                "title": 'Building # 46 (E)'
+            },
+            {
+                "src": 'https://s3.eu-central-1.amazonaws.com/ar-fulda-app/E/e+(14).jpg',
+                "w": 1024,
+                "h": 683,
+                "title": 'Building # 46 (E)'
             }
         ]
     },
@@ -89,10 +191,40 @@ var pointersData = [
         "thumbnailURL": "http://i.imgur.com/DnDoIjl.jpg",
         "buildingImages": [
             {
-                "src": "https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg",
+                "src": "https://s3.eu-central-1.amazonaws.com/ar-fulda-app/G/G+(1).jpg",
                 "w": 964,
                 "h": 1024,
-                "title": 'Image1 Caption'
+                "title": 'Building # 51 (G)'
+            },
+            {
+                "src": "https://s3.eu-central-1.amazonaws.com/ar-fulda-app/G/G+(2).jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Building # 51 (G)'
+            },
+            {
+                "src": "https://s3.eu-central-1.amazonaws.com/ar-fulda-app/G/G+(3).jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Building # 51 (G)'
+            },
+            {
+                "src": "https://s3.eu-central-1.amazonaws.com/ar-fulda-app/G/G+(4).jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Building # 51 (G)'
+            },
+            {
+                "src": "https://s3.eu-central-1.amazonaws.com/ar-fulda-app/G/G+(5).jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Building # 51 (G)'
+            },
+            {
+                "src": "https://s3.eu-central-1.amazonaws.com/ar-fulda-app/G/G+(6).jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Building # 51 (G)'
             }
         ]
     },
@@ -105,14 +237,14 @@ var pointersData = [
         "description": "Few of social sciences related classes held in this building. Beside this building you can find the offices of Studentenwerk.",
         "buildingName": "Building # 23 (Q)",
         "thumbnailURL": "http://i.imgur.com/DnDoIjl.jpg",
-        "buildingImages": [
-            {
-                "src": "https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg",
-                "w": 964,
-                "h": 1024,
-                "title": 'Image1 Caption'
-            }
-        ]
+        //"buildingImages": [
+        //    {
+        //        "src": "https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg",
+        //        "w": 964,
+        //        "h": 1024,
+        //        "title": 'Image1 Caption'
+        //    }
+        //]
     },
     {
         "id": 7,
@@ -125,10 +257,46 @@ var pointersData = [
         "thumbnailURL": "http://i.imgur.com/DnDoIjl.jpg",
         "buildingImages": [
             {
-                "src": "https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg",
+                "src": "https://s3.eu-central-1.amazonaws.com/ar-fulda-app/U/U+(1).jpg",
                 "w": 964,
                 "h": 1024,
-                "title": 'Image1 Caption'
+                "title": 'Building # 12 (U)'
+            },
+            {
+                "src": "https://s3.eu-central-1.amazonaws.com/ar-fulda-app/U/U+(2).jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Building # 12 (U)'
+            },
+            {
+                "src": "https://s3.eu-central-1.amazonaws.com/ar-fulda-app/U/U+(3).jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Building # 12 (U)'
+            },
+            {
+                "src": "https://s3.eu-central-1.amazonaws.com/ar-fulda-app/U/U+(4).jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Building # 12 (U)'
+            },
+            {
+                "src": "https://s3.eu-central-1.amazonaws.com/ar-fulda-app/U/U+(5).jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Building # 12 (U)'
+            },
+            {
+                "src": "https://s3.eu-central-1.amazonaws.com/ar-fulda-app/U/U+(6).jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Building # 12 (U)'
+            },
+            {
+                "src": "https://s3.eu-central-1.amazonaws.com/ar-fulda-app/U/U+(7).jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Building # 12 (U)'
             }
         ]
     },
@@ -143,10 +311,70 @@ var pointersData = [
         "thumbnailURL": "http://i.imgur.com/DnDoIjl.jpg",
         "buildingImages": [
             {
-                "src": "https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg",
+                "src": "https://s3.eu-central-1.amazonaws.com/ar-fulda-app/T/T+(1).jpeg",
                 "w": 964,
                 "h": 1024,
-                "title": 'Image1 Caption'
+                "title": 'Building # 11 (T)'
+            },
+            {
+                "src": "https://s3.eu-central-1.amazonaws.com/ar-fulda-app/T/T+(1).jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Building # 11 (T)'
+            },
+            {
+                "src": "https://s3.eu-central-1.amazonaws.com/ar-fulda-app/T/T+(2).jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Building # 11 (T)'
+            },
+            {
+                "src": "https://s3.eu-central-1.amazonaws.com/ar-fulda-app/T/T+(3).jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Building # 11 (T)'
+            },
+            {
+                "src": "https://s3.eu-central-1.amazonaws.com/ar-fulda-app/T/T+(4).jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Building # 11 (T)'
+            },
+            {
+                "src": "https://s3.eu-central-1.amazonaws.com/ar-fulda-app/T/T+(5).jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Building # 11 (T)'
+            },
+            {
+                "src": "https://s3.eu-central-1.amazonaws.com/ar-fulda-app/T/T+(6).jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Building # 11 (T)'
+            },
+            {
+                "src": "https://s3.eu-central-1.amazonaws.com/ar-fulda-app/T/T+(7).jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Building # 11 (T)'
+            },
+            {
+                "src": "https://s3.eu-central-1.amazonaws.com/ar-fulda-app/T/T+(8).jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Building # 11 (T)'
+            },
+            {
+                "src": "https://s3.eu-central-1.amazonaws.com/ar-fulda-app/T/T+(9).jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Building # 11 (T)'
+            },
+            {
+                "src": "https://s3.eu-central-1.amazonaws.com/ar-fulda-app/T/T+(10).jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Building # 11 (T)'
             }
         ]
     },
@@ -161,10 +389,52 @@ var pointersData = [
         "thumbnailURL": "http://i.imgur.com/DnDoIjl.jpg",
         "buildingImages": [
             {
-                "src": "https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg",
+                "src": "	https://s3.eu-central-1.amazonaws.com/ar-fulda-app/S/s+(1).jpg",
                 "w": 964,
                 "h": 1024,
-                "title": 'Image1 Caption'
+                "title": 'Building # 10 (S)'
+            },
+            {
+                "src": "	https://s3.eu-central-1.amazonaws.com/ar-fulda-app/S/s+(2).jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Building # 10 (S)'
+            },
+            {
+                "src": "	https://s3.eu-central-1.amazonaws.com/ar-fulda-app/S/s+(3).jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Building # 10 (S)'
+            },
+            {
+                "src": "	https://s3.eu-central-1.amazonaws.com/ar-fulda-app/S/s+(4).jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Building # 10 (S)'
+            },
+            {
+                "src": "	https://s3.eu-central-1.amazonaws.com/ar-fulda-app/S/s+(5).jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Building # 10 (S)'
+            },
+            {
+                "src": "	https://s3.eu-central-1.amazonaws.com/ar-fulda-app/S/s+(6).jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Building # 10 (S)'
+            },
+            {
+                "src": "	https://s3.eu-central-1.amazonaws.com/ar-fulda-app/S/s+(7).jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Building # 10 (S)'
+            },
+            {
+                "src": "	https://s3.eu-central-1.amazonaws.com/ar-fulda-app/S/s+(8).jpg",
+                "w": 964,
+                "h": 1024,
+                "title": 'Building # 10 (S)'
             }
         ]
     },
