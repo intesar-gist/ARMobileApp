@@ -28,40 +28,40 @@ var pointersData = [
         "name": "C (43)",
         "description": "Offices of the concerned persons for international student's consultation specially M.Sc. GSD group. Advisers such as Ms. Hirth, Mrs. Beate etc. sits here. Also issues related to System2Teach could be solved by visiting Room # 07.",
         "buildingName": "Building # 43 (C)",
-        "thumbnailURL": "assets/gallery/C/1.jpg",
+        "thumbnailURL": "assets/gallery/C/1-min.jpg",
         "buildingImages": [
             {
-                "src": "assets/gallery/C/1.jpg",
+                "src": "assets/gallery/C/1-min.jpg",
                 "w": 964,
                 "h": 1024,
                 "title": 'Building # 43 (C)'
             },
             {
-                "src": "assets/gallery/C/2.jpg",
+                "src": "assets/gallery/C/2-min.jpg",
                 "w": 964,
                 "h": 1024,
                 "title": 'Building # 43 (C)'
             },
             {
-                "src": "assets/gallery/C/3.jpg",
+                "src": "assets/gallery/C/3-min.jpg",
                 "w": 964,
                 "h": 1024,
                 "title": 'Building # 43 (C)'
             },
             {
-                "src": "assets/gallery/C/4.jpg",
+                "src": "assets/gallery/C/4-min.jpg",
                 "w": 964,
                 "h": 1024,
                 "title": 'Building # 43 (C)'
             },
             {
-                "src": "assets/gallery/C/5.jpg",
+                "src": "assets/gallery/C/5-min.jpg",
                 "w": 964,
                 "h": 1024,
                 "title": 'Building # 43 (C)'
             },
             {
-                "src": "assets/gallery/C/6.jpg",
+                "src": "assets/gallery/C/6-min.jpg",
                 "w": 964,
                 "h": 1024,
                 "title": 'Building # 43 (C)'
@@ -76,88 +76,58 @@ var pointersData = [
         "name": "E (46)",
         "buildingName": "Building # 46 (E)",
         "description": "Main building for Department of Computer Science. All labs such as Linux, Cloud Computing or IOS are here. Major CS classes also held in this same building.",
-        "thumbnailURL": "assets/gallery/E/4.jpg",
+        "thumbnailURL": "assets/gallery/E/4-min.jpg",
         "buildingImages": [
             {
-                "src": "assets/gallery/E/1.jpg",
+                "src": "assets/gallery/E/1-min.jpg",
                 "w": 1080,
                 "h": 1080,
                 "title": 'Building # 46 (E)'
             },
             {
-                "src": "assets/gallery/E/2.jpg",
+                "src": "assets/gallery/E/2-min.jpg",
                 "w": 1080,
                 "h": 1080,
                 "title": 'Building # 46 (E)'
             },
             {
-                "src": "assets/gallery/E/3.jpg",
+                "src": "assets/gallery/E/3-min.jpg",
                 "w": 1080,
                 "h": 1080,
                 "title": 'Building # 46 (E)'
             },
             {
-                "src": "assets/gallery/E/4.jpg",
+                "src": "assets/gallery/E/4-min.jpg",
                 "w": 1024,
                 "h": 683,
                 "title": 'Building # 46 (E)'
             },
             {
-                "src": "assets/gallery/E/5.jpg",
+                "src": "assets/gallery/E/5-min.jpg",
                 "w": 1024,
                 "h": 683,
                 "title": 'Building # 46 (E)'
             },
             {
-                "src": "assets/gallery/E/6.jpg",
+                "src": "assets/gallery/E/6-min.jpg",
                 "w": 1024,
                 "h": 683,
                 "title": 'Building # 46 (E)'
             },
             {
-                "src": "assets/gallery/E/7.jpg",
+                "src": "assets/gallery/E/7-min.jpg",
                 "w": 1024,
                 "h": 683,
                 "title": 'Building # 46 (E)'
             },
             {
-                "src": "assets/gallery/E/8.jpg",
+                "src": "assets/gallery/E/8-min.jpg",
                 "w": 1024,
                 "h": 683,
                 "title": 'Building # 46 (E)'
             },
             {
-                "src": "assets/gallery/E/9.jpg",
-                "w": 1024,
-                "h": 683,
-                "title": 'Building # 46 (E)'
-            },
-            {
-                "src": "assets/gallery/E/10.jpg",
-                "w": 1024,
-                "h": 683,
-                "title": 'Building # 46 (E)'
-            },
-            {
-                "src": "assets/gallery/E/11.jpg",
-                "w": 1024,
-                "h": 683,
-                "title": 'Building # 46 (E)'
-            },
-            {
-                "src": "assets/gallery/E/12.jpg",
-                "w": 1024,
-                "h": 683,
-                "title": 'Building # 46 (E)'
-            },
-            {
-                "src": "assets/gallery/E/13.jpg",
-                "w": 1024,
-                "h": 683,
-                "title": 'Building # 46 (E)'
-            },
-            {
-                "src": "assets/gallery/E/14.jpg",
+                "src": "assets/gallery/E/9-min.jpg",
                 "w": 1024,
                 "h": 683,
                 "title": 'Building # 46 (E)'
@@ -172,40 +142,28 @@ var pointersData = [
         "name": "G (51)",
         "buildingName": "Building # 51 (G)",
         "description": "You can find offices of the Professors here (Prof. Todenhöfer, Prof. Herpers. etc). There are two computer labs with a printing room as well in this building.",
-        "thumbnailURL": "assets/gallery/G/1.jpg",
+        "thumbnailURL": "assets/gallery/G/1-min.jpg",
         "buildingImages": [
             {
-                "src": "assets/gallery/G/1.jpg",
+                "src": "assets/gallery/G/1-min.jpg",
                 "w": 964,
                 "h": 1024,
                 "title": 'Building # 51 (G)'
             },
             {
-                "src": "assets/gallery/G/2.jpg",
+                "src": "assets/gallery/G/2-min.jpg",
                 "w": 964,
                 "h": 1024,
                 "title": 'Building # 51 (G)'
             },
             {
-                "src": "assets/gallery/G/3.jpg",
+                "src": "assets/gallery/G/3-min.jpg",
                 "w": 964,
                 "h": 1024,
                 "title": 'Building # 51 (G)'
             },
             {
-                "src": "assets/gallery/G/4.jpg",
-                "w": 964,
-                "h": 1024,
-                "title": 'Building # 51 (G)'
-            },
-            {
-                "src": "assets/gallery/G/5.jpg",
-                "w": 964,
-                "h": 1024,
-                "title": 'Building # 51 (G)'
-            },
-            {
-                "src": "assets/gallery/G/6.jpg",
+                "src": "assets/gallery/G/5-min.jpg",
                 "w": 964,
                 "h": 1024,
                 "title": 'Building # 51 (G)'
@@ -238,46 +196,46 @@ var pointersData = [
         "name": "U (12)",
         "buildingName": "Building # 12 (U)",
         "description": "Bibliothek / Library of the university. Books can be borrowed from the library using library's web portal for 5 weeks. This can be extended as well.",
-        "thumbnailURL": "assets/gallery/U/5.jpg",
+        "thumbnailURL": "assets/gallery/U/5-min.jpg",
         "buildingImages": [
             {
-                "src": "assets/gallery/U/1.jpg",
+                "src": "assets/gallery/U/1-min.jpg",
                 "w": 964,
                 "h": 1024,
                 "title": 'Building # 12 (U)'
             },
             {
-                "src": "assets/gallery/U/2.jpg",
+                "src": "assets/gallery/U/2-min.jpg",
                 "w": 964,
                 "h": 1024,
                 "title": 'Building # 12 (U)'
             },
             {
-                "src": "assets/gallery/U/3.jpg",
+                "src": "assets/gallery/U/3-min.jpg",
                 "w": 964,
                 "h": 1024,
                 "title": 'Building # 12 (U)'
             },
             {
-                "src": "assets/gallery/U/4.jpg",
+                "src": "assets/gallery/U/4-min.jpg",
                 "w": 964,
                 "h": 1024,
                 "title": 'Building # 12 (U)'
             },
             {
-                "src": "assets/gallery/U/5.jpg",
+                "src": "assets/gallery/U/5-min.jpg",
                 "w": 964,
                 "h": 1024,
                 "title": 'Building # 12 (U)'
             },
             {
-                "src": "assets/gallery/U/6.jpg",
+                "src": "assets/gallery/U/6-min.jpg",
                 "w": 964,
                 "h": 1024,
                 "title": 'Building # 12 (U)'
             },
             {
-                "src": "assets/gallery/U/7.jpg",
+                "src": "assets/gallery/U/7-min.jpg",
                 "w": 964,
                 "h": 1024,
                 "title": 'Building # 12 (U)'
@@ -292,70 +250,46 @@ var pointersData = [
         "name": "T (11)",
         "description": "MENSA. This is basically the place to eat. Students gets subsidy on the lunch and refreshments. You need to charge your ID CARD using the machine outside for paying. No money accepts here.",
         "buildingName": "Building # 11 (T)",
-        "thumbnailURL": "assets/gallery/T/9.jpg",
+        "thumbnailURL": "assets/gallery/T/5-min.jpg",
         "buildingImages": [
             {
-                "src": "assets/gallery/T/1.jpg",
+                "src": "assets/gallery/T/1-min.jpg",
                 "w": 964,
                 "h": 1024,
                 "title": 'Building # 11 (T)'
             },
             {
-                "src": "assets/gallery/T/2.jpg",
+                "src": "assets/gallery/T/2-min.jpg",
                 "w": 964,
                 "h": 1024,
                 "title": 'Building # 11 (T)'
             },
             {
-                "src": "assets/gallery/T/3.jpg",
+                "src": "assets/gallery/T/3-min.jpg",
                 "w": 964,
                 "h": 1024,
                 "title": 'Building # 11 (T)'
             },
             {
-                "src": "assets/gallery/T/4.jpg",
+                "src": "assets/gallery/T/4-min.jpg",
                 "w": 964,
                 "h": 1024,
                 "title": 'Building # 11 (T)'
             },
             {
-                "src": "assets/gallery/T/5.jpg",
+                "src": "assets/gallery/T/5-min.jpg",
                 "w": 964,
                 "h": 1024,
                 "title": 'Building # 11 (T)'
             },
             {
-                "src": "assets/gallery/T/6.jpg",
+                "src": "assets/gallery/T/6-min.jpg",
                 "w": 964,
                 "h": 1024,
                 "title": 'Building # 11 (T)'
             },
             {
-                "src": "assets/gallery/T/7.jpg",
-                "w": 964,
-                "h": 1024,
-                "title": 'Building # 11 (T)'
-            },
-            {
-                "src": "assets/gallery/T/8.jpg",
-                "w": 964,
-                "h": 1024,
-                "title": 'Building # 11 (T)'
-            },
-            {
-                "src": "assets/gallery/T/9.jpg",
-                "w": 964,
-                "h": 1024,
-                "title": 'Building # 11 (T)'
-            },
-            {
-                "src": "assets/gallery/T/10.jpg",
-                "w": 964,
-                "h": 1024,
-                "title": 'Building # 11 (T)'
-            },
-            {
-                "src": "assets/gallery/T/11.jpg",
+                "src": "assets/gallery/T/7-min.jpg",
                 "w": 964,
                 "h": 1024,
                 "title": 'Building # 11 (T)'
@@ -370,52 +304,46 @@ var pointersData = [
         "name": "S (10)",
         "buildingName": "Building # 10 (S)",
         "description": "SSC. International students service center where you can register yourself, get whatever information you want from front office. You can also visit to get advise from counsellors.",
-        "thumbnailURL": "assets/gallery/S/4.jpg",
+        "thumbnailURL": "assets/gallery/S/6-min.jpg",
         "buildingImages": [
             {
-                "src": "assets/gallery/S/1.jpg",
+                "src": "assets/gallery/S/1-min.jpg",
                 "w": 964,
                 "h": 1024,
                 "title": 'Building # 10 (S)'
             },
             {
-                "src": "assets/gallery/S/2.jpg",
+                "src": "assets/gallery/S/2-min.jpg",
                 "w": 964,
                 "h": 1024,
                 "title": 'Building # 10 (S)'
             },
             {
-                "src": "assets/gallery/S/3.jpg",
+                "src": "assets/gallery/S/3-min.jpg",
                 "w": 964,
                 "h": 1024,
                 "title": 'Building # 10 (S)'
             },
             {
-                "src": "assets/gallery/S/4.jpg",
+                "src": "assets/gallery/S/5-min.jpg",
                 "w": 964,
                 "h": 1024,
                 "title": 'Building # 10 (S)'
             },
             {
-                "src": "assets/gallery/S/5.jpg",
+                "src": "assets/gallery/S/6-min.jpg",
                 "w": 964,
                 "h": 1024,
                 "title": 'Building # 10 (S)'
             },
             {
-                "src": "assets/gallery/S/6.jpg",
+                "src": "assets/gallery/S/7-min.jpg",
                 "w": 964,
                 "h": 1024,
                 "title": 'Building # 10 (S)'
             },
             {
-                "src": "assets/gallery/S/7.jpg",
-                "w": 964,
-                "h": 1024,
-                "title": 'Building # 10 (S)'
-            },
-            {
-                "src": "assets/gallery/S/8.jpg",
+                "src": "assets/gallery/S/8-min.jpg",
                 "w": 964,
                 "h": 1024,
                 "title": 'Building # 10 (S)'
