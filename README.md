@@ -27,8 +27,9 @@ Since the university comrises of more than 30 buildings it is really hard for a 
 - Click on the augmented banner to check the official details available on the university website. In app web browser will be opened.
 
 #### Support
-> This application is made for Android but support IOS as well after **some minor configurations**.
+> This application is made for latest Android only but support IOS as well after **some minor configurations**.
 > Currently support data related to 11 buildings of the university. 
+> Supports SDK >= 24
 
 
 #### Technologies Used
