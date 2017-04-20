@@ -4,7 +4,7 @@
 </div>
 <br>
 
-<p align="center"> <h1># Augment Fulda</h1> <p>
+<center> # Augment Fulda <center>
 
 Augmented reality application to help new students of University of applied sciences Fulda to track university buildings.
 
