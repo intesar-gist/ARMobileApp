@@ -9,7 +9,7 @@
 Augmented reality application to help new students of University of applied sciences Fulda to track university buildings.
 
 ## Motivation
-Since the university comrises of more than 30 buildings it is really hard for a new comer to find a particular building unless he/she goes near to every building and check the label mounted on the wall. Furthermore, it is itself a struggle to find the board where exactly it is :-). Although I am here for more than 6 months but I still struggles to find out a building that's not common for students of computer science department. Considering the mentioned issues I found augmented reality application the best option to solve this problem. **So I present students of Fulda my Augment Fulda application, I hope it will help them track network of buildings**.
+Since the university comprises of more than 30 buildings it is really hard for a new comer to find a particular building unless he/she goes near to every building and check the label mounted on the wall. Furthermore, it is itself a struggle to find the board where exactly it is :-). Although I am here for more than 6 months but I still struggles to find out a building that's not common for students of computer science department. Considering the mentioned issues I found augmented reality application the best option to solve this problem. **So I present students of Fulda my Augment Fulda application, I hope it will help them track network of buildings**.
 
 ## Features
 
