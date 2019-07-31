@@ -1,6 +1,6 @@
 
 <div align="center" style="width:250px;height:250px;">
-    <img src="https://s3.eu-central-1.amazonaws.com/ar-fulda-app/banners/web_hi_res_512-resize.png" alt="HS Fulda Logo">
+    <img src="https://i.imgur.com/QbFFefj.png" alt="HS Fulda Logo">
 </div>
 <br>
 
