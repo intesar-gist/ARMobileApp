@@ -43,6 +43,6 @@ Since the university comprises of more than 30 buildings it is really hard for a
 
 #### Live Demo
 
-Picture and/or video worth a thousand words. Please play the video below to see the application in action.
+A picture is worth a thousand words. Please check the video below to see the application in action.
 
 [![Appication Demo](http://img.youtube.com/vi/z4p7fVaLyDY/0.jpg)](http://www.youtube.com/watch?v=z4p7fVaLyDY)
